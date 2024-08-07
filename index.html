@@ -63,8 +63,15 @@
             }
             function calcular ()
             {
-                var resultado
+                var resultado = document.getElementById('resultado').innerHTML;
+                if (resultado)
+                {
+                    document.getElementById('resultado').innerHTML = eval(resultado)
+                }
+                {
+                    document.getElementById('resultado').innerHTML = "Nada para Calcular"
+                }
             }
         </script>
     </body>
-</html>
+</html>xxc
